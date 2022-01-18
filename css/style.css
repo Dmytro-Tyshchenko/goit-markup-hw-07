@@ -9,7 +9,7 @@
   --social-link-color: #afb1b8;
 }
 
-body {
+/* body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--primary-white-color);
   color: var(--paragraph-text-color);
@@ -17,7 +17,7 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.8;
-}
+} */
 
 .container {
   width: 1200px;
@@ -161,8 +161,8 @@ body {
 
 /* ---------------------------------------hero */
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero-img.jpg');
+  /* background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-img.jpg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -200,7 +200,7 @@ body {
   cursor: pointer;
 }
 /* -------------------------------МОДАЛЬНОЕ ОКНО */
-.backdrop {
+/* .backdrop {
   display: flex;
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -215,8 +215,8 @@ body {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-}
-.modal {
+} */
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -243,7 +243,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-}
+} */
 
 .icon-positon {
   position: absolute;
