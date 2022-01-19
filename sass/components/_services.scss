@@ -6,7 +6,7 @@
   @extend %container;
 }
 .services__title {
-  @extend %h2;
+  @extend %h2, %main-font;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -42,6 +42,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 .variation__paragraph {
+  @extend %main-font;
   margin: 0;
   padding: 0;
 

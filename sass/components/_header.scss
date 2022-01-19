@@ -14,6 +14,7 @@
   color: $accent-color;
 }
 // ---------------------------------------------
+
 .navigation {
   @extend %ul-item;
   display: flex;
@@ -26,6 +27,22 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.navigation__link {
+  @extend %main-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
 .navigation__item:not(:first-child) {
   margin-left: 50px;
 }
@@ -34,37 +51,25 @@
   position: relative;
   padding: 40px 0;
   color: $primary-text-color;
+
+  &--current::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $accent-color;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+  &--currColor {
+    color: $accent-color;
+  }
 }
 
-.navigation .navigation__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.navigation .navigation__link:hover,
-.navigation .navigation__link:focus {
-  color: $accent-color;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.navigation__link--current::after {
-  content: '';
-  display: block;
-  position: absolute;
-  background-color: $accent-color;
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
-  bottom: 0;
-  right: 0;
-  opacity: 1;
-}
-.navigation__link--currColor {
-  color: $accent-color;
-}
 // -------------------------------------------------------
 .contact {
   @extend %ul-item;
@@ -78,30 +83,32 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .contact__link {
+    @extend %a-link, %main-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
 .contact__item:not(:first-child) {
   margin-left: 50px;
 }
-.contact .contact__link {
-  @extend %a-link;
-  color: $primary-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact .contact__link:hover,
-.contact .contact__link:focus {
-  color: $accent-color;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .contact__icon {
   width: 16px;
   height: 12px;

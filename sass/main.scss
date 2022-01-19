@@ -8,6 +8,5 @@
 @import 'components/clients';
 @import 'components/footer';
 @import 'components/modalWindow';
-body {
-  @extend %body;
-}
+@import 'components/portfolioFilter';
+@import 'components/portfolioFilterResult';

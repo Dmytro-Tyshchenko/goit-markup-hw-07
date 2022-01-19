@@ -1,13 +1,19 @@
-%body {
+%main-font {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--primary-white-color);
-  color: var(--paragraph-text-color);
+  color: $paragraph-text-color;
   font-style: normal;
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.8;
 }
-
+@mixin mainFont($type: red) {
+  font-family: 'Roboto', sans-serif;
+  color: $type;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.8;
+}
 // --------------------------
 %logo-font {
   font-family: 'Raleway', sans-serif;

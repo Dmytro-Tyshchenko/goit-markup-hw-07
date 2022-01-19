@@ -46,7 +46,9 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-
+%textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
 // html{
 //     box-sizing: border-box;
 // }

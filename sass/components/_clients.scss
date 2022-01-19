@@ -5,7 +5,7 @@
   @extend %container;
 }
 .clients__title {
-  @extend %h2;
+  @extend %h2, %main-font;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -36,16 +36,18 @@
   transition-property: background-color color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.group__link:hover,
-.group__link:focus {
-  border-color: $accent-color;
-  color: $accent-color;
 
-  transition-property: background-color color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+
+    transition-property: background-color color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
+
 .group__icon {
   fill: currentColor;
 }

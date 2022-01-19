@@ -24,6 +24,7 @@
 }
 // ---------------------------------------
 .address {
+  @extend %main-font;
   color: $primary-white-color;
 
   font-style: normal;
@@ -44,27 +45,29 @@
   margin-bottom: 9px;
 }
 .footerContact__link {
-  @extend %a-link;
+  @extend %a-link, %main-font;
   color: #ffffff99;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footerContact__link:hover,
-.footerContact__link:focus {
-  color: $accent-color;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
+
 // -------------------------------
 .joint {
   margin-left: 70px;
 }
 .joint__title {
-  @extend %h3;
+  @extend %h3, %main-font;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -96,15 +99,17 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footerNav__link:hover,
-.footerNav__link:focus {
-  background-color: $accent-color;
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
+
 .footerNav__icon {
   fill: currentColor;
 }
@@ -113,6 +118,7 @@
   margin-left: 88px;
 }
 .footerLabel {
+  @extend %main-font;
   display: flex;
   margin-bottom: 20px;
   font-weight: 700;

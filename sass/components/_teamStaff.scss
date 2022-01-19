@@ -6,7 +6,7 @@
   @extend %container;
 }
 .staff__title {
-  @extend %h2;
+  @extend %h2, %main-font;
   padding: 0;
   margin-bottom: 50px;
 
@@ -43,7 +43,7 @@
   padding-bottom: 30px;
 }
 .profile__name {
-  @extend %h3;
+  @extend %h3, %main-font;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -52,6 +52,7 @@
   text-align: center;
 }
 .profile__job {
+  @extend %main-font;
   margin: 0;
 
   font-size: 16px;
